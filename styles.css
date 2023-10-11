@@ -1,0 +1,29 @@
+body{
+    background: rgb(218, 212, 212);
+}
+
+.container-top{
+    display: flex;
+    margin:10% ;
+    gap: 50px;
+    height: 300px;
+    
+    
+}
+
+.container-top1{
+    background-color: beige;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4% 2%;
+}
+
+
+.container-top1 i{
+    
+}
+
+.span{
+    color: rgb(0, 94, 255);
+}
+
