@@ -4,6 +4,7 @@ body{
 
 .container-top{
     display: flex;
+    flex-direction: row;
     margin:10% ;
     gap: 50px;
     height: 300px;
@@ -19,11 +20,18 @@ body{
 }
 
 
-.container-top1 i{
-    
-}
 
 .span{
     color: rgb(0, 94, 255);
+}
+
+@media (max-width:1000px) {
+    
+.container-top{
+    flex-direction: column;
+    width: 100;
+    gap: 400px;
+    
+}
 }
 
