@@ -115,3 +115,46 @@
 // Arr.splice(3,0,0);
 
 // console.log(Arr)
+
+
+// IF ELSE CODITION
+
+// let pwd_crt = false;
+
+// if(pwd_crt){
+//     console.log("success")
+// } else{
+//     console.log("failed")
+// }
+
+// console.log("bye")
+
+// a=20, b=30
+// let c 
+
+// // if(a>b){
+// //    c = a
+// // } else {
+// //     c = b
+// // }
+
+//  c = a>b?a:b  // ternary operator
+
+// console.log(c)
+
+
+// FD CALUCLATOR
+
+function calculate() {
+    const months = document.getElementById("input").values;
+
+    if(months < 3){
+        console.log('5.8%')
+    } else if(months  3 && months === 6) {
+        console.log('6.5%')
+    }  else if(months === 7 && months === 9){
+        console.log('6.8')
+    } else {
+        console.log('7%')
+    }
+}
