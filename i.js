@@ -159,3 +159,19 @@
 
 //   result.innerHTML = `your intrest rate is ${rate} %`;
 // }
+
+function checking() {
+    const left = document.getElementById("input").value; // Get input as a string
+    const right = left.split("").reverse().join(""); // Reverse the string
+
+    let ans;
+    if (left === right) {
+        ans = "It is a palindrome";
+    } else {
+        ans = "It is not a palindrome";
+    }
+
+    const result = document.querySelector("#result");
+    result.innerHTML = ans;
+}
+
