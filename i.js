@@ -106,7 +106,6 @@
 // // let joins = [...yak,...dho];  // spread operator
 // console.log(joins);
 
-
 // Arr=[5,8,10,7,9,11];
 
 // let ans = Arr.splice(3,3,17,19,11)  // replacing array
@@ -115,7 +114,6 @@
 // Arr.splice(3,0,0);
 
 // console.log(Arr)
-
 
 // IF ELSE CODITION
 
@@ -130,7 +128,7 @@
 // console.log("bye")
 
 // a=20, b=30
-// let c 
+// let c
 
 // // if(a>b){
 // //    c = a
@@ -142,19 +140,22 @@
 
 // console.log(c)
 
-
 // FD CALUCLATOR
 
-function calculate() {
-    const months = document.getElementById("input").values;
+// function calculate() {
+//   const months = parseInt(document.getElementById("input").value);
 
-    if(months < 3){
-        console.log('5.8%')
-    } else if(months  3 && months === 6) {
-        console.log('6.5%')
-    }  else if(months === 7 && months === 9){
-        console.log('6.8')
-    } else {
-        console.log('7%')
-    }
-}
+//   if (months < 3) {
+//     rate = 5.4;
+//   } else if (months > 3 && months <= 6) {
+//     rate = 6.5;
+//   } else if (months >= 7 && months <= 9) {
+//     ratem = 6.8;
+//   } else {
+//     rate = 7;
+//   }
+
+//   const result = document.querySelector("#result");
+
+//   result.innerHTML = `your intrest rate is ${rate} %`;
+// }
