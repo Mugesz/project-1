@@ -160,18 +160,76 @@
 //   result.innerHTML = `your intrest rate is ${rate} %`;
 // }
 
-function checking() {
-    const left = document.getElementById("input").value; // Get input as a string
-    const right = left.split("").reverse().join(""); // Reverse the string
+// function checking() {
+//     const left = document.getElementById("input").value; // Get input as a string
+//     const right = left.split("").reverse().join(""); // Reverse the string
 
-    let ans;
-    if (left === right) {
-        ans = "It is a palindrome";
-    } else {
-        ans = "It is not a palindrome";
-    }
+//     let ans;
+//     if (left === right) {
+//         ans = "It is a palindrome";
+//     } else {
+//         ans = "It is not a palindrome";
+//     }
 
-    const result = document.querySelector("#result");
-    result.innerHTML = ans;
-}
+//     const result = document.querySelector("#result");
+//     result.innerHTML = ans;
+// }
 
+/*
+'Chennai': population = 4646732
+           literacyRate = 90.20
+           language = 'Tamil'
+'Bengaluru':population = 8443675
+            literacyRate = 88.71
+            language = 'Kannada'
+'Mumbai':population = 12442373
+        literacyRate = 89.73
+        language = 'Marathi'
+'Delhi': population = 16787941
+         literacyRate = 86.20
+         language = 'Hindi'
+The Indian city of Bengaluru has a population of 8443675. Language spoken is Kannada and literacy rate is 88.71%.
+*/
+
+// const button = document.querySelector("button");
+// //  event listner
+
+// button.addEventListener("click", displayStats);
+
+// function displayStats() {
+//   const input = document.getElementById("input");
+//   const city = input.value;
+
+//   let population = 0,
+//     litracyRate = 0,
+//     language = "";
+//   switch (city) {
+//     case "Bengaluru":
+//       population = 8443675;
+//       litracyRate = 88.71;
+//       language = "kannada";
+//       break;
+
+//     case "Chennai":
+//       population = 865845;
+//       litracyRate = 68.71;
+//       language = "Tamil";
+//       break;
+
+//     case "Delhi":
+//       population = 656588;
+//       litracyRate = 98.71;
+//       language = "Hindi";
+//       break;
+
+//     case "Mumbai":
+//       population = 989854;
+//       litracyRate = 80.71;
+//       language = "Hindi";
+//       break;
+//   }
+
+//   let text = `The Indian city of ${city} has a population of ${population}. language spoken is ${language} and litracy rate is ${litracyRate}%.`;
+
+//   document.getElementById("result").innerHTML = text;
+// }

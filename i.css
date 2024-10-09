@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e8ba;
+  color: aliceblue;
+}
+
+
+select {
+  width: 150px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+    background-color: rgb(58, 58, 136);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #dbbd5b;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
