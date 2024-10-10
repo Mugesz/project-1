@@ -233,3 +233,85 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 
 //   document.getElementById("result").innerHTML = text;
 // }
+
+// objects
+
+// let item = {
+//   name: "Mobile",
+//   price: 25000,
+//   quantity: 1,
+//   dimensions: {
+//    length:7,
+//    breadth:3.5,
+//    height:.5
+//   }
+// };
+
+// console.log(item)
+
+// let item2 = new  Object();
+//  item2.name = 'earpods'
+//  item2.price = 700
+//  item2.quantity=2
+//  // dot notation
+//  console.log(item2.quantity)
+//  console.log(item.dimensions.height)
+
+//  // square notation
+//  console.log(item['price'])
+
+// // Loops
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// i=10;
+// while (i >= 1) {
+//   console.log(i);
+//   i--;
+// }
+
+// i =10;
+// do{
+//   console.log(i)
+//   i--;
+// }while(i>=1)
+
+//   // continue demo skips the current iteration
+
+//   for(i=0; i<=10;i++){
+//     if(i%3==0)
+//       continue
+//     console.log(i)
+//   }
+// //  out put
+// //   1
+// // 2
+// // 4
+// // 5
+// // 7
+// // 8
+// // 10
+
+// let arr = ['apple', 'orange', 'grapes','mango']
+
+// for (i=0; i<arr.length; i++){
+//   console.log(arr[i].toUpperCase())
+// }
+
+// for (let fruit of arr)
+//   console.log(fruit)
+
+// item = {
+//   name: "phone",
+//   quantity: 1,
+//   price: 25000,
+// };
+
+// for (let key in item) {
+//   console.log(item[key]);
+// }
