@@ -315,4 +315,29 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 // for (let key in item) {
 //   console.log(item[key]);
 // }
- 
+
+// FLIPPER COLORS
+
+// function Flipper() {
+//   const colors = ["#7FFFD4", "#B2FFFF", "#20B2AA", "#00CCFF", "#007A74"];
+//   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//   const wrapper = document.getElementById("wrapper");
+//   wrapper.style.backgroundColor = randomColor;
+// }
+
+// addEventListener
+
+// // FLIPPER
+// function Flip() {
+//   const colors = ["#7FFFD4", "#B2FFFF", "#20B2AA", "#00CCFF", "#007A74"];
+//   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//   const wrapper = document.getElementById("wrapper");
+//   wrapper.style.backgroundColor = randomColor;
+// }
+
+// const button = document.getElementById("flipper");
+// button.addEventListener("click",Flip);
+
+    
+    
+    
