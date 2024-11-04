@@ -516,13 +516,13 @@ for (let i = 0; i < cards.length; i++) {
   const card = cards[i];
 
   card.addEventListener("mouseover", () => {
-    clearInterval(autoExpandInterval);  // Stop the automatic animation on hover
-    expandHoveredCard(card);  // Expand hovered card, shrink others
+    clearInterval(autoExpandInterval);  
+    expandHoveredCard(card); 
   });
 
   card.addEventListener("mouseout", () => {
-    resetAllCards();  // Reset width of all cards when hover ends
-    startAutoExpand();  // Optionally restart automatic animation after hover
+    resetAllCards(); 
+    startAutoExpand();  
   });
 }
 
@@ -530,9 +530,9 @@ for (let i = 0; i < cards.length; i++) {
 function expandHoveredCard(hoveredCard) {
   for (let card of cards) {
     if (card === hoveredCard) {
-      card.style.width = "40%";  // Expand the hovered card to 40%
+      card.style.width = "40%";  
     } else {
-      card.style.width = "10%";  // Shrink all other cards to 1%
+      card.style.width = "10%"; 
     }
   }
 }
