@@ -492,7 +492,7 @@ const cards = document.getElementsByClassName("flex-div")[0].children;  // Get a
 let currentCard = 0;
 let autoExpandInterval;
 
-// Function to automatically expand cards every 5 seconds
+// Function to automatically expand cards every 2 seconds
 function startAutoExpand() {
   autoExpandInterval = setInterval(() => {
     resetAllCards();  
