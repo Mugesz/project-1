@@ -338,7 +338,6 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 // const button = document.getElementById("flipper");
 // button.addEventListener("click",Flip);
 
-
 // Fetching Razor pay Api
 
 // async function getData() {
@@ -353,3 +352,187 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 // }
 
 // getData();
+
+// // TYPES OF FUNCTIIONS
+
+// function isPositive(num) {
+//   return num > 0;
+// }
+
+// console.log(isPositive(5));
+
+// function findProduct(a, b) {
+//   return a * b;
+// }
+
+// console.log(findProduct);
+// console.log(typeof findProduct);
+
+// // DEFAULT pARAMETERS
+
+// function greet(name = "there") {
+//   console.log("hi", name);
+// }
+
+// greet("mugu");
+// greet();
+
+// // FACTORIAL
+
+// function factorial(n) {
+//   if (n == 1) {
+//     return 1;
+//   }
+//   return n * factorial(n - 1);
+// }
+
+// // console.log(factorial(5))
+// const card = document.getElementsByClassName("card1")[0];
+// const card1 = document.getElementsByClassName("card2")[0];
+// const card2 = document.getElementsByClassName("card3")[0];
+// const card3 = document.getElementsByClassName("card4")[0];
+// const card4 = document.getElementsByClassName("card5")[0];
+
+// card.addEventListener("mouseover", hovering1);
+// card.addEventListener("mouseout", resetWidth1);
+
+// card1.addEventListener("mouseover", hovering2);
+// card1.addEventListener("mouseout", resetWidth2);
+
+// card2.addEventListener("mouseover", hovering3);
+// card2.addEventListener("mouseout", resetWidth3);
+
+// card3.addEventListener("mouseover", hovering4);
+// card3.addEventListener("mouseout", resetWidth4);
+
+// card4.addEventListener("mouseover", hovering5);
+// card4.addEventListener("mouseout", resetWidth5);
+
+// function hovering1() {
+//   card.style.width = "40%";
+// }
+
+// function resetWidth1() {
+//   card.style.width = "10%";
+// }
+
+// function hovering2() {
+//   card1.style.width = "40%";
+// }
+
+// function resetWidth2() {
+//   card1.style.width = "10%";
+// }
+
+// function hovering3() {
+//   card2.style.width = "40%";
+// }
+
+// function resetWidth3() {
+//   card2.style.width = "10%";
+// }
+
+// function hovering4() {
+//   card3.style.width = "40%";
+// }
+
+// function resetWidth4() {
+//   card3.style.width = "10%";
+// }
+
+// function hovering5() {
+//   card4.style.width = "40%";
+// }
+
+// function resetWidth5() {
+//   card4.style.width = "10%";
+// }
+
+
+// const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
+// let currentCard = 0;
+// let autoExpandInterval;
+
+// // Function to automatically expand cards every 5 seconds
+// function startAutoExpand() {
+//   autoExpandInterval = setInterval(() => {
+//     resetAllCards();  // Reset all cards to the original size before expanding the next
+//     cards[currentCard].style.width = "40%";  // Expand current card
+//     currentCard = (currentCard + 1) % cards.length;  // Move to the next card, loop back after last card
+//   }, 3000);  // 5 seconds interval
+// }
+
+// // Function to reset all cards to original width
+// function resetAllCards() {
+//   for (let card of cards) {
+//     card.style.width = "10%";
+//   }
+// }
+
+// // Start the automatic card expansion when the page loads
+// startAutoExpand();
+
+// // Add hover event listeners to each card to stop the automatic animation
+// for (let i = 0; i < cards.length; i++) {
+//   const card = cards[i];
+
+//   card.addEventListener("mouseover", () => {
+//     clearInterval(autoExpandInterval);  // Stop the automatic animation on hover
+//     card.style.width = "40%";  // Manually expand the card on hover
+//   });
+
+//   card.addEventListener("mouseout", () => {
+//     card.style.width = "10%";  // Reset width when hover ends
+//     startAutoExpand();  // Optionally restart automatic animation after hover
+//   });
+// }
+
+
+const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
+let currentCard = 0;
+let autoExpandInterval;
+
+// Function to automatically expand cards every 5 seconds
+function startAutoExpand() {
+  autoExpandInterval = setInterval(() => {
+    resetAllCards();  
+    cards[currentCard].style.width = "40%";  
+    currentCard = (currentCard + 1) % cards.length;  
+  }, 2000);  
+}
+
+// Function to reset all cards to original width
+function resetAllCards() {
+  for (let card of cards) {
+    card.style.width = "10%";
+  }
+}
+
+// Start the automatic card expansion when the page loads
+startAutoExpand();
+
+// Add hover event listeners to each card to stop the automatic animation
+for (let i = 0; i < cards.length; i++) {
+  const card = cards[i];
+
+  card.addEventListener("mouseover", () => {
+    clearInterval(autoExpandInterval);  // Stop the automatic animation on hover
+    expandHoveredCard(card);  // Expand hovered card, shrink others
+  });
+
+  card.addEventListener("mouseout", () => {
+    resetAllCards();  // Reset width of all cards when hover ends
+    startAutoExpand();  // Optionally restart automatic animation after hover
+  });
+}
+
+// Function to expand hovered card and shrink others
+function expandHoveredCard(hoveredCard) {
+  for (let card of cards) {
+    if (card === hoveredCard) {
+      card.style.width = "40%";  // Expand the hovered card to 40%
+    } else {
+      card.style.width = "10%";  // Shrink all other cards to 1%
+    }
+  }
+}

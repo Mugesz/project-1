@@ -37,3 +37,42 @@ select {
     cursor: pointer;
     color: aliceblue;
 } */
+
+.main-div {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-div {
+  display: flex;
+  width: 100%;
+}
+.card1, .card2, .card3, .card4, .card5 {
+  width: 10%;
+  height: 80vh;
+  transition: width 0.8s ease;  /* Add a transition effect to width */
+}
+
+.card1 {
+  background-color: aqua;
+}
+
+.card2 {
+  background-color: rgb(0, 38, 255);
+}
+
+.card3 {
+  background-color: rgb(255, 187, 0);
+}
+
+.card4 {
+  background-color: rgb(217, 255, 0);
+}
+
+.card5 {
+  background-color: rgb(234, 0, 255);
+}
