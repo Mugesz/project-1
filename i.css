@@ -51,10 +51,14 @@ select {
   display: flex;
   width: 100%;
 }
-.card1, .card2, .card3, .card4, .card5 {
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
   width: 10%;
   height: 80vh;
-  transition: width 0.8s ease;  /* Add a transition effect to width */
+  transition: width 0.8s ease; /* Add a transition effect to width */
 }
 
 .card1 {
@@ -75,4 +79,15 @@ select {
 
 .card5 {
   background-color: rgb(234, 0, 255);
+}
+
+.gras {
+  height: 45vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 100
+  );
 }

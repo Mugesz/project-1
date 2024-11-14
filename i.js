@@ -448,7 +448,6 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 //   card4.style.width = "10%";
 // }
 
-
 // const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
 // let currentCard = 0;
 // let autoExpandInterval;
@@ -487,52 +486,125 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 //   });
 // }
 
+// // Webflow card animation js
+// const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
+// let currentCard = 0;
+// let autoExpandInterval;
 
-const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
-let currentCard = 0;
-let autoExpandInterval;
+// // Function to automatically expand cards every 2 seconds
+// function startAutoExpand() {
+//   autoExpandInterval = setInterval(() => {
+//     resetAllCards();
+//     cards[currentCard].style.width = "40%";
+//     currentCard = (currentCard + 1) % cards.length;
+//   }, 2000);
+// }
 
-// Function to automatically expand cards every 2 seconds
-function startAutoExpand() {
-  autoExpandInterval = setInterval(() => {
-    resetAllCards();  
-    cards[currentCard].style.width = "40%";  
-    currentCard = (currentCard + 1) % cards.length;  
-  }, 2000);  
-}
+// // Function to reset all cards to original width
+// function resetAllCards() {
+//   for (let card of cards) {
+//     card.style.width = "10%";
+//   }
+// }
 
-// Function to reset all cards to original width
-function resetAllCards() {
-  for (let card of cards) {
-    card.style.width = "10%";
+// // Start the automatic card expansion when the page loads
+// startAutoExpand();
+
+// // Add hover event listeners to each card to stop the automatic animation
+// for (let i = 0; i < cards.length; i++) {
+//   const card = cards[i];
+
+//   card.addEventListener("mouseover", () => {
+//     clearInterval(autoExpandInterval);
+//     expandHoveredCard(card);
+//   });
+
+//   card.addEventListener("mouseout", () => {
+//     resetAllCards();
+//     startAutoExpand();
+//   });
+// }
+
+// // Function to expand hovered card and shrink others
+// function expandHoveredCard(hoveredCard) {
+//   for (let card of cards) {
+//     if (card === hoveredCard) {
+//       card.style.width = "40%";
+//     } else {
+//       card.style.width = "10%";
+//     }
+//   }
+// }
+
+// Callback
+
+// function greetConsole(name) {
+//   console.log("hello", name);
+// }
+
+// function greetHeading(name) {
+//   const heading = document.querySelector("h1");
+//   heading.innerHTML = 'hello' + name
+// }
+
+// function greet(Callback){
+//   Callback("mugu")
+// }
+
+// // greet(greetHeading)
+// greet(greetConsole)
+
+// const cards = document.getElementsByClassName("flex-div")[0].children;  // Get all cards
+// let currentCard = 0;
+// let autoExpandInterval;
+
+// // Function to automatically expand cards every 2 seconds
+// function startAutoExpand() {
+//   autoExpandInterval = setInterval(() => {
+//     resetAllCards();
+//     cards[currentCard].style.width = "40%";
+//     currentCard = (currentCard + 1) % cards.length;
+//   }, 2000);
+// }
+
+// // Function to reset all cards to original width
+// function resetAllCards() {
+//   for (let card of cards) {
+//     card.style.width = "10%";
+//   }
+// }
+
+// const card = document.getElementsByClassName("flex-div")[0].children;
+
+// let cardcount = 0;
+// let counts;
+
+// function autoCard() {
+//   counts = setTimeout(() => {
+//     resetCards();
+//     card[cardcount].style.width = "40%";
+//     cardcount = (cardcount + 1) % card.length;
+//   }, 4000);
+// }
+
+// function resetCards() {
+//   for (let card of card) {
+//     card.style.width = "10%";
+//   }
+// }
+
+// forEach((value, index , array)=>{
+//     // here for each have value index and array  need to be passed
+// })
+
+let arr = ["6", "-5", "7", "-2", "4", "6", "-1"];
+let sum = 0;
+
+arr.forEach((val) => {
+  const positive = Number(val) > 0;
+  if (positive) {
+    sum += Number(val)
   }
-}
+});
 
-// Start the automatic card expansion when the page loads
-startAutoExpand();
-
-// Add hover event listeners to each card to stop the automatic animation
-for (let i = 0; i < cards.length; i++) {
-  const card = cards[i];
-
-  card.addEventListener("mouseover", () => {
-    clearInterval(autoExpandInterval);  
-    expandHoveredCard(card); 
-  });
-
-  card.addEventListener("mouseout", () => {
-    resetAllCards(); 
-    startAutoExpand();  
-  });
-}
-
-// Function to expand hovered card and shrink others
-function expandHoveredCard(hoveredCard) {
-  for (let card of cards) {
-    if (card === hoveredCard) {
-      card.style.width = "40%";  
-    } else {
-      card.style.width = "10%"; 
-    }
-  }
-}
+console.log(sum)
