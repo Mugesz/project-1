@@ -597,14 +597,17 @@ The Indian city of Bengaluru has a population of 8443675. Language spoken is Kan
 //     // here for each have value index and array  need to be passed
 // })
 
-let arr = ["6", "-5", "7", "-2", "4", "6", "-1"];
-let sum = 0;
+// let arr = ["6", "-5", "7", "-2", "4", "6", "-1"];
+// let sum = 0;
 
-arr.forEach((val) => {
-  const positive = Number(val) > 0;
-  if (positive) {
-    sum += Number(val)
-  }
-});
+// arr.forEach((val) => {
+//   const positive = Number(val) > 0;
+//   if (positive) {
+//     sum += Number(val)
+//   }
+// });
 
-console.log(sum)
+// console.log(sum)
+
+
+
